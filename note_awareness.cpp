@@ -81,7 +81,7 @@ int main() {
             cout<<" ("<<inversions[inversion]<<" inversion)";
         }
         cout<<"\n";
-        cout<<"Intervals: "<<interval_1<<", "<<interval_2<<"\n\n";
+        //cout<<"Intervals: "<<interval_1<<", "<<interval_2<<"\n\n";
         
         auto start = std::chrono::system_clock::now();
         for(int j=0; j < answer_notes.size(); j++) {
