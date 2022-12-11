@@ -22,7 +22,7 @@ int main() {
     vector<int> scores;
 
     print_main_banner();
-    cout<<"(NOTE: Please go through the readme for instructions on how to play.)\n\n"
+    cout<<"(NOTE: Please go through the readme for instructions on how to play.)\n\n";
     cout<<"Include chord inversions? (Y/N): ";
     cin>>to_use_inversions;
     use_inversions = (to_use_inversions == 'Y' || to_use_inversions == 'y');
