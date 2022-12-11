@@ -15,6 +15,8 @@ int main() {
     vector<string> notes = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
     vector<string> chord_types = {"major", "minor", "augmented", "diminished"};
     vector<string> inversions = {"root", "1st", "2nd"};
+    int major_third_interval = 4;
+    int minor_third_interval = 3;
     
     char to_continue = 'Y';
     char to_use_inversions = 'Y';
@@ -35,26 +37,28 @@ int main() {
         int chord_type = rand() % chord_types.size();
 
         int interval_1, interval_2;
+        
+
         switch(chord_type) {
             case 0:
-                interval_1 = 4;
-                interval_2 = 7;
+                interval_1 = major_third_interval;
+                interval_2 = interval_1 + minor_third_interval;
                 break;
             case 1:
-                interval_1 = 3;
-                interval_2 = 7;
+                interval_1 = minor_third_interval;
+                interval_2 = interval_1 + major_third_interval;
                 break;
             case 2:
-                interval_1 = 4;
-                interval_2 = 8;
+                interval_1 = major_third_interval;
+                interval_2 = interval_1 + major_third_interval;
                 break;
             case 3:
-                interval_1 = 3;
-                interval_2 = 6;
+                interval_1 = minor_third_interval;
+                interval_2 = interval_1 + minor_third_interval;
                 break;
             default:
-                interval_1 = 4;
-                interval_2 = 7;
+                interval_1 = major_third_interval;
+                interval_2 = interval_1 + minor_third_interval;
                 break;
         }
 
@@ -77,7 +81,7 @@ int main() {
             cout<<" ("<<inversions[inversion]<<" inversion)";
         }
         cout<<"\n";
-        //cout<<"Intervals: "<<interval_1<<", "<<interval_2<<"\n\n";
+        cout<<"Intervals: "<<interval_1<<", "<<interval_2<<"\n\n";
         
         auto start = std::chrono::system_clock::now();
         for(int j=0; j < answer_notes.size(); j++) {
