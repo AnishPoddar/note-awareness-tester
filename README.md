@@ -3,6 +3,7 @@ C++ program to test your mental ability to build chords as quickly as possible i
 
 How to run via command line (Windows):
 > g++ note_awareness.cpp
+
 > a
 
 # Introduction
@@ -12,6 +13,7 @@ Welcome to the Note Awareness Tester! This is a simple, fun game designed to tes
 # Some basics (for music theory beginners)
 
 There are 12 *notes* in music. They are:
+
 C, C#, D, D#, E, F, F#, G, G#, A, A#, B
 
 A *chord* is a group of 2 or more notes played simultaneously. For example, the set of notes (C, E, G) is one such chord.
