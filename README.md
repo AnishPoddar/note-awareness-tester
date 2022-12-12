@@ -2,6 +2,10 @@
 C++ program to test your mental ability to build chords as quickly as possible in your head.
 
 How to run via command line (Windows):
+> play
+
+If you have C++ installed and wish to make changes to the code, once you have made your changes, compile the code and run as follows:
+
 > g++ note_awareness.cpp
 
 > a
